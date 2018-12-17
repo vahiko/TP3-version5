@@ -59,30 +59,30 @@
                                 <ComboBoxItem Content="2019" HorizontalAlignment="Left"/>
                             </ComboBox>
                             <ComboBox x:Name="cmbHeures" HorizontalAlignment="Left" Margin="392,73,0,0" VerticalAlignment="Top" Width="84" IsEnabled="False">
-                                <ComboBoxItem Content="01:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="02:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="03:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="04:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="05:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="06:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="07:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="08:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="09:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="10:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="11:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="12:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="13:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="14:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="15:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="16:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="17:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="18:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="19:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="20:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="21:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="22:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="23:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
-                                <ComboBoxItem Content="24:00:00" HorizontalAlignment="Left" Width="90" FlowDirection="RightToLeft"/>
+                                <ComboBoxItem Content="01:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="02:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="03:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="04:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="05:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="06:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="07:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="08:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="09:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="10:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="11:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="12:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="13:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="14:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="15:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="16:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="17:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="18:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="19:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="20:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="21:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="22:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="23:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
+                                <ComboBoxItem Content="24:00:00" HorizontalAlignment="Left" Width="80" FlowDirection="LeftToRight"/>
 
                             </ComboBox>
                             <CheckBox x:Name="chkNomCours" Content="NomCours" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Height="21" Width="102" Click="Event_NomCours_Checked"/>
@@ -155,16 +155,28 @@
             </TabItem>
         </TabControl>
         <Menu Height="24" VerticalAlignment="Top">
-            <MenuItem Header="Fichier" Height="24" Width="51">
-                <MenuItem Header="Ouvrier"  Click="Event_Ouvrir_Click"/>
-                <Separator HorizontalAlignment="Left" />
-                <MenuItem Header="Annuler le filter" Click="Event_Annuler_Click"/>
-                <Separator HorizontalAlignment="Left" />
-                <MenuItem Header="Quitter"  Click="Event_Exit_Click"/>
+            <MenuItem Header="Fichier" Height="24" Width="72">
+                <MenuItem Header="Ouvrier"  Click="Event_Ouvrir_Click" ToolTip="Ouvrir le fichier" InputGestureText="Ctrl+O">
+                    <MenuItem.Icon>
+                        <Image Name="Open" Height="20" Source="Images/open.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Annuler" Click="Event_Annuler_Click" ToolTip="Annuler le filter" InputGestureText="Ctrl+A" Background="{x:Null}">
+                    <MenuItem.Icon>
+                        <Image Name="Delete" Source="Images/delete.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator  />
+                <MenuItem Header="Quitter"  Click="Event_Exit_Click" ToolTip="Quitter le logiciel" InputGestureText="Ctrl+Q">
+                    <MenuItem.Icon>
+                        <Image Name="Quitter" Source="Images/exit.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
             <MenuItem Header="Aide ?" Width="55" >
                 <MenuItem x:Name="mnu_Docs" Header="Documentation" Click="Mnu_Docs_Click"   />
-                <Separator HorizontalAlignment="Left" />
+                <Separator  />
                 <MenuItem x:Name="mnu_Apropos" Header="A propos" Click="Mnu_Apropos_Click" />
             </MenuItem>
         </Menu>

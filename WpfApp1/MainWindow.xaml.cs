@@ -119,9 +119,9 @@ namespace WpfApp1
 
 
 
-        //<--------- Обработчики меню -------------->
+        //<--------- Evenements de Menu -------------->
 
-        //Открыть файл
+        //Ouvrir un fichier
         private void Event_Ouvrir_Click(object sender, RoutedEventArgs e)
         {
             // éfacer des infos dans la collection
@@ -191,7 +191,7 @@ namespace WpfApp1
         }
 
 
-        //Сбросить фильтр
+        //Annulier les selections
         private void Event_Annuler_Click(object sender, RoutedEventArgs e)
         {
             
@@ -203,16 +203,16 @@ namespace WpfApp1
 
         }
 
-        //Выход из программы
+        //Quitter le logiciel
         private void Event_Exit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
 
 
-        // <--------- Обработчики чекбоксов --------->
+        // <--------- CheckBoxs  et TextBoxs properties--------->
 
-        //Метод сброса всех чекбокс и текстбоксов
+        //la methode de suprimer les donnees et unchecked les choix
         private void Clear_All()
         {
             chkNoCours.IsChecked = false;
@@ -246,7 +246,7 @@ namespace WpfApp1
 
         }
 
-        //Обработчик чекбокс NoCours
+        //L'evenement NoCours
         private void Event_IsChecked(object sender, RoutedEventArgs e)
         {
 
@@ -262,7 +262,7 @@ namespace WpfApp1
             }
         }
 
-        //Обработчик чекбокс NomCours
+        //L'evenement NomCours
         private void Event_NomCours_Checked(object sender, RoutedEventArgs e)
         {
             if (chkNomCours.IsChecked == true)
@@ -279,7 +279,7 @@ namespace WpfApp1
         }
 
 
-        //Обработчик чекбокс DateDebut
+        //L'evenement DateDebut
         private void chkDateDebut_Checked(object sender, RoutedEventArgs e)
         {
             if (chkDateDebut.IsChecked == true)
@@ -304,7 +304,7 @@ namespace WpfApp1
             }
         }
 
-        //Обработчик чекбокс HeureDebut
+        //L'evenementHeureDebut
         private void Event_Check_Click_Button(object sender, RoutedEventArgs e)
         {
             if (chkHeureDebut.IsChecked == true)
@@ -318,7 +318,7 @@ namespace WpfApp1
             }
         }
 
-        //Обработчик чекбокс NumeroLocal
+        //L'evenement NumeroLocal
         private void chkNumeroLocal_Click(object sender, RoutedEventArgs e)
         {
             if (chkNumeroLocal.IsChecked == true)
@@ -333,7 +333,7 @@ namespace WpfApp1
             }
         }
 
-        //Обработчик чекбокс NumeroGroupe
+        //L'evenement NumeroGroupe
         private void chkNumeroGroupe_Click(object sender, RoutedEventArgs e)
         {
             if (chkNumeroGroupe.IsChecked == true)
@@ -349,7 +349,7 @@ namespace WpfApp1
             }
         }
 
-        //Обработчик чекбокс NoJour
+        //L'evenement NoJour
         private void chkNoJour_Click(object sender, RoutedEventArgs e)
         {
             if (chkNoJour.IsChecked == true)
@@ -367,9 +367,9 @@ namespace WpfApp1
 
         //<----------------------------------------------------->
 
-        //<--------- Методы фильтра (поиска) --------->
+        //<---------Les methodes pour filtrer les informations --------->
 
-        //Поиск по NoCours
+        //Chercher par NoCours
         private void SearchByNoCours()
         {
             lst_Horaire_copy.Clear();
@@ -394,7 +394,7 @@ namespace WpfApp1
 
         }
 
-        //Поиск по NomCours
+        //Chercher par NomCours
         internal void SearchByNom()
         {
             lst_Horaire_copy.Clear();
@@ -420,7 +420,7 @@ namespace WpfApp1
             }
         }
 
-        //Поиск по NumeroLocal
+        //Chercher par NumeroLocal
         private void SearchByNumeroLocal()
         {
             lst_Horaire_copy.Clear();
@@ -446,7 +446,7 @@ namespace WpfApp1
 
         }
 
-        //Поиск по NoGroupe
+        //Chercher par NoGroupe
         private void SearchByNoGroupe()
         {
             lst_Horaire_copy.Clear();
@@ -471,7 +471,7 @@ namespace WpfApp1
             }
         }
 
-        //Поиск по DateDebut
+        //Chercher par DateDebut
         private void SearchByDate()
         {
             lst_Horaire_copy.Clear();
@@ -494,7 +494,7 @@ namespace WpfApp1
 
 
 
-        //Поиск по NoJour
+        //Chercher par NoJour
         private void SearchByJour()
         {
             lst_Horaire_copy.Clear();
